@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">AdditionalActivities</string>
+    <string name="app_name">Atividades Complementares</string>
+
+    <string name="facebook_app_id">122563795095917</string>
+    <string name="fb_login_protocol_scheme">fb122563795095917</string>
+
+    <string name="processing_login">Processando login, por favor aguarde…</string>
+
+    <string name="error_failed_signin_email_exists">Falha ao entrar\n\nEsse e-mail já está sendo usado em nosso sistema.\nTente novamente com outro método de login.</string>
+    <string name="error_unknown_error">Erro desconhecido, tente novamente e contate o administrador.</string>
+    <string name="error_signin">Algo deu errado ao fazer login, tente novamente.</string>
+    <string name="error_google_play_services">Erro no Google Play Services.</string>
+    <string name="error_facebook_login_canceled">Login com o Facebook cancelado.</string>
+    <string name="error_facebook_login_unknown_error">Erro desconhecido com o login com o Facebook, tente novamente e contate o administrador.</string>
+    <string name="error_failed_signin_google_account">Falha ao logar com a conta Google, tente novamente.</string>
 </resources>
