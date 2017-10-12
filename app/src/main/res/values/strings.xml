@@ -19,4 +19,8 @@
     <string name="yes_logout">Sim</string>
     <string name="no_logout">Cancelar</string>
     <string name="msg_logout">Deslogado com sucesso.</string>
+
+    <string name="main_separator">/</string>
+    <string name="main_hours_completed">0</string>
+    <string name="main_total_hours">192</string>
 </resources>
