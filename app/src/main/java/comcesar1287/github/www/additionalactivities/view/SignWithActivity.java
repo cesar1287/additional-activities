@@ -39,7 +39,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import comcesar1287.github.www.additionalactivities.R;
-import comcesar1287.github.www.additionalactivities.controller.domain.User;
+import comcesar1287.github.www.additionalactivities.controller.domain.UserFirebase;
 import comcesar1287.github.www.additionalactivities.controller.firebase.FirebaseHelper;
 import es.dmoral.toasty.Toasty;
 
@@ -236,10 +236,10 @@ public class SignWithActivity extends AppCompatActivity implements FacebookCallb
                 new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
-                        // Get user value
-                        User user = dataSnapshot.getValue(User.class);
+                        // Get userFirebase value
+                        UserFirebase userFirebase = dataSnapshot.getValue(UserFirebase.class);
 
-                        if (user == null) {
+                        if (userFirebase == null) {
                             FirebaseHelper.writeNewUser(mDatabase, Uid, name, email, profile_pic);
                         }
                     }

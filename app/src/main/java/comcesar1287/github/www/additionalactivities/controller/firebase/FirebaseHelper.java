@@ -2,7 +2,7 @@ package comcesar1287.github.www.additionalactivities.controller.firebase;
 
 import com.google.firebase.database.DatabaseReference;
 
-import comcesar1287.github.www.additionalactivities.controller.domain.User;
+import comcesar1287.github.www.additionalactivities.controller.domain.UserFirebase;
 
 public class FirebaseHelper {
 
@@ -10,8 +10,8 @@ public class FirebaseHelper {
 
     public static void writeNewUser(DatabaseReference mDatabase, String userId, String name, String email, String profile_pic) {
 
-        User user = new User(name, email, profile_pic);
+        UserFirebase userFirebase = new UserFirebase(name, email, profile_pic);
 
-        mDatabase.child(FIREBASE_DATABASE_USERS).child(userId).setValue(user);
+        mDatabase.child(FIREBASE_DATABASE_USERS).child(userId).setValue(userFirebase);
     }
 }
